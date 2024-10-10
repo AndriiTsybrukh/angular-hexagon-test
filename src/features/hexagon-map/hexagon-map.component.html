@@ -1,1 +1,7 @@
-<p>hexagon-map works!</p>
+<div
+  class="map-container"
+  leaflet
+  [leafletOptions]="options"
+  (leafletMapReady)="onMapReady($event)"
+  (leafletMapMove)="onMapMove($event)"
+></div>
