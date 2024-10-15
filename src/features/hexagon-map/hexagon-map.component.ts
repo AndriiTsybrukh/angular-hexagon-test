@@ -24,7 +24,7 @@ import { HexagonBoundaryInfo } from './hexagon-map-store.model';
   providers: [provideComponentStore(HexagonMapStoreService)],
   templateUrl: './hexagon-map.component.html',
   styleUrl: './hexagon-map.component.scss',
-  changeDetection: ChangeDetectionStrategy.Default,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HexagonMapComponent {
   public readonly boundaries$: Observable<HexagonBoundaryInfo[]>;
